@@ -1,0 +1,23 @@
+# Raw HEIC/HEIF source files inside photos/ (converted JPGs are used instead)
+photos/**/*.HEIC
+photos/**/*.heic
+photos/**/*.HEIF
+photos/**/*.heif
+photos/**/*.JPEG
+
+# Source photo folders (not needed for the deployed site)
+viajes/
+viajes - full/
+viajes-20260415T083650Z-3-001/
+Pictures/
+
+# Zip archives
+*.zip
+
+# Claude Code project files
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

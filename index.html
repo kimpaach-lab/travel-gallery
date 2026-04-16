@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A personal travel photo gallery spanning Mexico, the United States, France, Spain, and Japan." />
+  <meta name="theme-color" content="#fdf6e8" />
+  <title>My Travel Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <h1 class="site-title" id="site-title">My Travel Gallery</h1>
+      <nav class="breadcrumb" id="breadcrumb" aria-label="breadcrumb"></nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="app">
+    <!-- Views are injected here by app.js -->
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-next" id="lb-next" aria-label="Next photo">&#8250;</button>
+    <figure class="lightbox-figure">
+      <img id="lb-img" src="" alt="" />
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <div class="lightbox-counter" id="lb-counter"></div>
+  </div>
+
+  <!-- Map tooltip -->
+  <div id="map-tooltip" class="map-tooltip"></div>
+
+  <script src="https://unpkg.com/d3@7/dist/d3.min.js"></script>
+  <script src="https://unpkg.com/topojson@3/dist/topojson.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
